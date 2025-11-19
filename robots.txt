@@ -1,0 +1,8 @@
+# Bloquea carpetas internas si las tuvieras:
+User-agent: *
+Disallow: /node_modules/
+Disallow: /private/
+Allow: /
+
+# Sitemap location
+Sitemap: https://tu-dominio-o-usuario.github.io/tu-proyecto/sitemap.xml

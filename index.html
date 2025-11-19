@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- SEO básico -->
+  <title>Mi sitio profesional — Portafolio y contacto</title>
+  <meta name="description" content="Portafolio de Naomi Rojas: proyectos web, diseño y contacto. Aprende sobre publicación, SEO y control de versiones." />
+  <meta name="keywords" content="portafolio, diseño web, HTML, CSS, Git, GitHub, SEO, Netlify" />
+  <meta name="author" content="Naomi Rojas" />
+  <link rel="canonical" href="https://tu-dominio-o-usuario.github.io/tu-proyecto/" />
+
+  <!-- Hreflang (si tuvieras versión en otros idiomas) -->
+  <link rel="alternate" hreflang="es" href="https://tu-dominio-o-usuario.github.io/tu-proyecto/" />
+  <!-- ejemplo para inglés:
+  <link rel="alternate" hreflang="en" href="https://tu-dominio.com/en/" />
+  -->
+
+  <!-- Open Graph (compartir en redes) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Mi sitio profesional — Portafolio y contacto" />
+  <meta property="og:description" content="Portafolio de Naomi Rojas: proyectos web, diseño y contacto. Aprende sobre publicación, SEO y control de versiones." />
+  <meta property="og:url" content="https://tu-dominio-o-usuario.github.io/tu-proyecto/" />
+  <meta property="og:site_name" content="Naomi Rojas" />
+  <meta property="og:image" content="https://tu-dominio-o-usuario.github.io/tu-proyecto/og-image.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mi sitio profesional — Portafolio y contacto" />
+  <meta name="twitter:description" content="Portafolio de Naomi Rojas: proyectos web, diseño y contacto." />
+  <meta name="twitter:image" content="https://tu-dominio-o-usuario.github.io/tu-proyecto/og-image.jpg" />
+
+  <!-- Link al sitemap -->
+  <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml" />
+
+  <!-- Estilos -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Structured Data (JSON-LD) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Naomi Rojas",
+    "url": "https://tu-dominio-o-usuario.github.io/tu-proyecto/",
+    "sameAs": [
+      "https://github.com/tu-usuario",
+      "https://www.linkedin.com/in/tu-usuario"
+    ],
+    "jobTitle": "Web Designer / Front-end Developer",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Freelance"
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header" role="banner">
+    <nav class="nav" role="navigation" aria-label="Main navigation">
+      <a class="logo" href="/">Naomi Rojas</a>
+      <ul class="nav-list">
+        <li><a href="#about">Sobre mí</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main" class="main-content" role="main">
+    <section id="hero" class="hero" aria-labelledby="hero-title">
+      <div class="hero-inner">
+        <h1 id="hero-title">Portafolio — Diseño web y Front-end</h1>
+        <p class="lead">Proyectos, buenas prácticas y recursos para publicar y optimizar sitios web.</p>
+        <a class="cta" href="#projects">Ver proyectos</a>
+      </div>
+      <!-- imagen con lazy loading y alt -->
+      <img src="hero.jpg" alt="Ejemplo de diseño web moderno" loading="lazy" width="800" height="400" />
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-title">
+      <h2 id="about-title">Sobre mí</h2>
+      <p>Me llamo Naomi. Diseño y construyo sitios web accesibles y responsivos. Uso Git/GitHub para control de versiones y despliegue en GitHub Pages / Netlify.</p>
+      <ul>
+        <li>HTML semántico y accesibilidad</li>
+        <li>SEO básico y performance</li>
+        <li>Versionado con Git</li>
+      </ul>
+    </section>
+
+    <section id="projects" class="projects" aria-labelledby="projects-title">
+      <h2 id="projects-title">Proyectos destacados</h2>
+
+      <article class="project" aria-labelledby="p1-title">
+        <h3 id="p1-title">Proyecto 1 — Landing responsive</h3>
+        <p>Descripción breve del proyecto con objetivo y tecnologías usadas.</p>
+        <a href="https://tu-proyecto-demo.netlify.app" rel="noopener noreferrer">Ir al proyecto</a>
+      </article>
+
+      <article class="project" aria-labelledby="p2-title">
+        <h3 id="p2-title">Proyecto 2 — App estática</h3>
+        <p>Descripción breve del proyecto.</p>
+        <a href="https://otro-ejemplo.com" rel="noopener noreferrer">Ir al proyecto</a>
+      </article>
+    </section>
+
+    <section id="contact" class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Contacto</h2>
+      <form class="contact-form" action="/thank-you.html" method="post" aria-label="Formulario de contacto">
+        <label for="name">Nombre</label>
+        <input id="name" name="name" type="text" required placeholder="Tu nombre completo" />
+
+        <label for="email">Correo</label>
+        <input id="email" name="email" type="email" required placeholder="nombre@correo.com" />
+
+        <label for="message">Mensaje</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Escribe tu mensaje..."></textarea>
+
+        <!-- captcha o protección básica: ejemplo (no funcional aquí) -->
+        <!-- <input type="hidden" name="honeypot" value="" /> -->
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer" role="contentinfo">
+    <p>© <span id="year"></span> Naomi Rojas — <a href="/privacy.html">Política de privacidad</a></p>
+  </footer>
+
+  <script>
+    // Pequeño script para accesibilidad y año dinámico (mejora UX, no afecta SEO)
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Añadir atributo rel="noopener" a enlaces externos (seguridad/performance)
+    document.querySelectorAll('a[rel="noopener noreferrer"]').forEach(a => {
+      // nada extra por ahora, es un recordatorio de buenas prácticas
+    });
+  </script>
+</body>
+</html>
